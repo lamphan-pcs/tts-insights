@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Mono:wght@400;600&display=swap');
+@import 'tailwindcss';
+
+:root {
+  font-family: 'Space Grotesk', sans-serif;
+  color: #111827;
+  background: #fffaf2;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 15% 10%, rgba(253, 186, 116, 0.3), transparent 42%),
+    radial-gradient(circle at 85% 15%, rgba(250, 204, 21, 0.2), transparent 36%),
+    linear-gradient(140deg, #fff7ed 0%, #fffbeb 45%, #fefce8 100%);
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.mono {
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.data-grid-wrap .rdg {
+  border: 1px solid rgba(217, 119, 6, 0.25);
+  border-radius: 0.75rem;
+  overflow: hidden;
+  --rdg-color: #111827;
+  --rdg-background-color: rgba(255, 255, 255, 0.88);
+  --rdg-header-background-color: #fef3c7;
+  --rdg-border-color: rgba(217, 119, 6, 0.22);
+  --rdg-selection-color: rgba(245, 158, 11, 0.35);
+}
