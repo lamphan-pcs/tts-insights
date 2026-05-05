@@ -677,6 +677,6 @@ app.post("/api/products/fetch", async (req, res) => {
     }
 });
 
-app.listen(port, () => {
-    console.log(`TikTok proxy listening on http://localhost:${port}`);
+app.listen(port, "0.0.0.0", () => {
+    console.log(`TikTok proxy listening on http://0.0.0.0:${port}`);
 });
